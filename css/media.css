@@ -1,0 +1,125 @@
+@media (max-width: 1024) {
+    .films__cards{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .films__card{
+        max-width: unset;
+        width: 48%;
+    }
+    .primers__content{
+        padding: 20px 0 40px;
+    }
+    .primers__content-image{
+        margin: 25px 0;
+    }
+    .primers__content-text{
+        margin-bottom: 25px;
+    }
+}
+/* phone */
+@media (max-width: 768px) {
+    .nav__menu{
+        width: 40px;
+        height: 40px;
+    }
+    .nav__menu-line{
+        width: 100%;
+        height: 2px;
+        background: var(--white);
+        display: inline-block;
+        position: relative;
+        transition: .5s;
+    }    
+    .nav__menu-line::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: var(--white);
+        position: absolute;
+        top: -10px;
+        transition: .5s;
+    }
+    .nav__menu-line::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: var(--white);
+        position: absolute;
+        top: 10px;
+        transition: .5s;
+    }
+    .nav__menu:hover .nav__menu-line::before {
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .nav__menu:hover .nav__meni-line::after{
+        transform: rotate(45deg);
+        top: 0;
+    }
+    .nav__menu:hover .nav__meni-line{
+        background: transparent;
+    }
+    .nav__list{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--darkblue);
+        z-index: -1;
+        transform: .5s;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav__meni:hover ~ .nav__list{
+        transform: scale(1);
+    }
+    .nav{
+        padding: 15px 0;
+    }
+    .films__cards{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .films__card{
+        max-width: unset;
+        width: 46%;
+        overflow: hidden;
+    }
+    .primers{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .primers__video{
+        display: none;
+    }
+}
+@media (max-width: 576px){
+    .series__card-md{
+        grid-column: span2;
+    }
+    .series__card-sm{
+        grid-column: span 2;
+    }
+    .footer__apps{
+        column-gap: 20px;
+    }
+    .footer__text{
+        font-size: 14px;
+    }
+}
+@media (max-width: 320px) {
+    .films__cards{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+    .films__card{
+        max-width: unset;
+        width: 98%;
+        overflow: hidden;
+    }
+}
+    
